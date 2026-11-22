@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Informasi & Pendaftaran Kegiatan Kampus</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Seminar Nasional Teknologi Informasi 2026</h1>
+        <nav aria-label="Navigasi Utama">
+          <a href="#tentang">Tentang</a>
+          <a href="#rundown">Rundown</a>
+          <a href="#daftar">Daftar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="tentang" class="card tentang-section">
+<img src="images/kegiatan.jpeg" alt="Suasana seminar teknologi informasi di aula kampus">        <div class="tentang-konten">
+          <h2>Tentang Kegiatan</h2>
+          <p>
+            Kegiatan ini merupakan forum akademik tahunan yang membahas perkembangan
+            <strong>pengembangan web modern</strong> serta penerapan <em>desain antarmuka aksesibel</em>
+            bagi mahasiswa dan praktisi teknologi.
+          </p>
+          <a href="https://mozilla.org" target="_blank" rel="noreferrer" class="link-panduan">
+            Baca Panduan Teknis & Referensi Web &nearr;
+          </a>
+        </div>
+      </section>
+
+      <section id="rundown" class="rundown-section">
+        <div class="card rundown-box">
+          <h2>Syarat Peserta</h2>
+          <ul>
+            <li>Mahasiswa aktif Fakultas Sains dan Teknologi Informasi</li>
+            <li>Membawa kartu tanda mahasiswa (KTM) saat registrasi ulang</li>
+            <li>Mengisi formulir pendaftaran daring sebelum batas waktu</li>
+          </ul>
+        </div>
+
+        <div class="card rundown-box">
+          <h2>Alur Pendaftaran</h2>
+          <ol>
+            <li>Isi data diri lengkap pada formulir pendaftaran di bawah</li>
+            <li>Periksa kembali kelengkapan surel dan pilihan divisi</li>
+            <li>Klik tombol Kirim Pendaftaran untuk menyimpan data</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="daftar" class="card">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="#" method="post" class="form-daftar">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input id="nama" name="nama" type="text" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+              <label for="surel">Alamat Surel</label>
+              <input id="surel" name="surel" type="email" placeholder="nama@kampus.ac.id" required>
+            </div>
+
+            <div class="form-group">
+              <label for="tanggal">Tanggal Lahir</label>
+              <input id="tanggal" name="tanggal" type="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="divisi">Pilihan Divisi</label>
+              <select id="divisi" name="divisi" required>
+                <option value="">-- Pilih Divisi --</option>
+                <option value="peserta">Peserta Umum</option>
+                <option value="acara">Panitia Acara</option>
+                <option value="publikasi">Publikasi & Dokumentasi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <label for="persetujuan" class="checkbox-label">
+              <input id="persetujuan" name="persetujuan" type="checkbox" required>
+              Saya menyetujui syarat dan ketentuan kegiatan ini.
+            </label>
+
+            <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Pemrograman Web - Informasi Panitia Kegiatan</p>
+      </div>
+    </footer>
+  </body>
+</html>
